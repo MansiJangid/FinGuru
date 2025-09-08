@@ -50,7 +50,7 @@ const Login = () => {
     }
     catch(error){
       if(error.response && error.response.data.message){
-        setError(error.response.data.messsage);
+        setError(error.response.data.message);
       }
       else{
         setError("Something went wrong. Please try again.");
@@ -72,7 +72,7 @@ const Login = () => {
             onChange={({target}) => setEmail(target.value)}
             label="Email Address"
             placeholder="abc@example.com"
-            type="text"
+            type="email"
           />
           <Input
             value={password}
