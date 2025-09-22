@@ -37,7 +37,7 @@ axiosInstance.interceptors.response.use(
                 window.location.href = "/login";
             }
             else if(error.response.status === 500){
-                console.error("Server error, Please try again later.");
+                console.error("Server error. Please try again later.");
             }
             
         }

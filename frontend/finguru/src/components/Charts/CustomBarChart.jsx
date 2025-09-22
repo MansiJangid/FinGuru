@@ -10,14 +10,13 @@ import {
     ResponsiveContainer,
     Cell,
 } from "recharts";
-import CustomTooltip from './CustomTooltip';
 
 
 const CustomBarChart = ({data}) => {
 
     //Function to return alternative colors
     const getBarColor = (index) => {
-        return index%2 === 0? "#875cf5" : "#cfbefb";
+        return index % 2 === 0? "#875cf5" : "#cfbefb";
     }
     const CustomTooltip = ({active, payload}) => {
         if(active && payload && payload.length){
